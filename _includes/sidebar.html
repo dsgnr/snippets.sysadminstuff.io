@@ -1,9 +1,12 @@
-<form action="/search.html">
-<div class="tipue_search_group">
-<input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
-</div>
-</form>
+<aside>
 
+<div class="sidebar-item">
+   <form action="/search.html">
+      <input class="form-control" placeholder="Search..." type="text" name="q"  pattern=".{3,}" title="At least 3 characters" required>
+   </form>
+</div>
+
+<div class="sidebar-item">
 
 <ul>
 {% assign categories_list = site.categories %}
@@ -18,3 +21,6 @@
   {% endif %}
 {% assign categories_list = nil %}
 </ul>
+</div>
+
+</aside>

@@ -1,3 +1,57 @@
-// This is the place to place Bootstrap-related CSS customizations.
-// As example you can start by importing the _bootswatch.scss file from one of the
-// theme provided by https://bootswatch.com .
+body { 
+   background-color:#f8f8f8;
+}
+a { 
+   color: #444;
+   &:hover { 
+      color:#777; 
+      text-decoration: none;
+   }
+}
+ul li { 
+   list-style: square;
+}
+.navbar { 
+   background-color:#343a40 !important;
+}
+.navbar-light .navbar-brand { 
+   color:#f8f8f8;
+}
+aside, .content { 
+   border: 1px solid rgba(0, 0, 0, 0.125); 
+   background-color:#fff;
+   border-radius:5px;
+}
+article { 
+   border-bottom: 1px solid #ececec;
+   &:last-child { 
+      border-bottom:0px;
+   }
+}
+.post { 
+   padding: 15px 50px; 
+   .heading { 
+      font-size:2.5em; 
+      margin: 50px 0px 10px 0px; 
+      line-height:1.5;
+   }
+}
+.page-content { 
+   margin: 80px auto;
+}
+.sidebar-item { 
+   padding: 20px; 
+   border-bottom:1px solid #ececec;
+   &:last-child { 
+      border-bottom:0;
+   }
+}
+#footer {
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
+}
+.footer-container {
+    clear:both;
+    padding: 30px 0px 20px 0px;
+}

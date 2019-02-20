@@ -6,17 +6,20 @@
   <body>
 
     {%- include header.html -%}
+
     <div class="container page-content">
-      <div class="col-8 float-left">
+    <div class="row">
+      <div class="col-12 col-md-9 float-left">
+	<div class="content">
           {{ content }}
+	</div>
       </div>
-    <div class="col-3 float-right">
+    <div class="col-12 col-md-3 float-right">
     {%- include sidebar.html -%}
     </div>
-    <div>
-
+</div>
+  </div>
 	{%- include footer.html -%}
-
   </body>
 
 </html>
